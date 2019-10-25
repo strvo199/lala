@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font:15px/1.6 Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.cover-content{
+    min-height: 98vh;   
+    width: 100%;
+    background-image:linear-gradient(to right top, rgba(0, 0, 0, 0.489), rgba(0, 0, 0, 0.593)), url('../img/bg-banner02.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.collection a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main-header{
+    display: flex;
+    min-height: 15vh;
+        padding-top: 20px;
+}
+.logo{
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+.collection{
+    flex: 2;
+}
+.collection li{
+display: inline;
+padding-right:10px ;
+letter-spacing: 2px;
+font-size: 20px;
+}
+.collection-2 a:hover,.collection a:hover{
+    color: darkgoldenrod;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+.logo0{
+    color: darkgoldenrod;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+.cover-body{
+    margin-top:60px;
+    text-align: center;
+
+}
+
+
+.cover-body h3,h1{
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 5px
+}
+
+.btn{
+    padding: 20px;
+    margin:0 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: darkgoldenrod; 
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    outline: none;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+.btn:hover{
+    font-weight: lighter;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 25px;
+    outline: none;
+    opacity: 1;
+
+}
+.load{
+margin-top: 50px;
+}
+
+.btn-tran{
+    background-color: transparent;
+    border: 1px solid rgba(184, 135, 11, 0.678);
+}
+.btn-tran:hover{
+    background-color: darkgoldenrod;
+}
+
+.about-main{
+    display: flex;
+    margin: 10vh 0;
+    
+}
+
+.about-main-1{
+    flex: 1;
+    margin-left: 10px;
+    text-align: center;
+}
+.about-main-1 p{
+    text-align: left;
+}
+#services{
+    background-color: rgba(128, 128, 128, 0.11);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.555);
+}
+
+.lin{
+    width: 50px;
+    border-top: 3px solid rgb(116, 88, 19);
+    margin: 15px auto 0 auto;
+
+}
+
+.services-main{
+    display: flex;
+    padding: 8vh 0;
+}
+.services-2{
+    text-align: center;
+}
+
+.services-main-1{
+    margin:5px;
+    text-align: left;
+}
+
+.big{
+    font-size: 90px;
+    font-weight: 800;
+}
+.services-main-1 h3{
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.514);
+    font-weight: bold;
+}
+.services-main-1 a{
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+.icon1{
+    color: darkgoldenrod;
+    font-size: 30px;
+    margin-top:2vh; 
+}
+.com{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-main{
+    padding:10vh ;
+    color: white;
+    min-height: 80vh;
+    background-image: linear-gradient(to right top, rgba(71, 61, 139, 0.842), rgba(0, 0, 5, 0.76))
+}
+.lin-white{
+border-top: 3px white solid;
+}
+.collection-2 a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 60px;    
+}
+.collection-2{
+    list-style-type: disc;
+}
+
+.contact-body{
+display: flex;
+margin-top: 3vh;
+justify-content: space-between;
+}
+.contact-body-1{
+    flex: 2;
+}
+.contact-body-2{
+    flex: 1;
+}
+.lala{
+    font-size: 2em;
+    color: darkgoldenrod;
+}
+.split{
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.control{
+    border: 1px darkgoldenrod solid;
+    outline: none;
+    background-color: transparent;
+    font-weight: bold;
+    color:white;
+    margin: 5px 0;
+    
+}
+.appear{
+    font-size: 3em;
+}
+.appear:hover{
+    color: darkgoldenrod;
+}
+.input-field-1{
+display: flex;
+justify-content: space-between;
+}
+.cole{
+    width: 100%;
+    padding: 10px 0;
+}
+.col{
+    margin-right: 5px;;
+}
+.appear2{
+    display: none;
+}
+footer{
+    min-height: 10vh;
+    text-align: center;
+}
+footer p{
+    padding-top:20px; 
+}
+
+
+
+/*media query*/
+@media(min-width:860px){
+
+}
+
+@media(max-width:760px),(max-width:860px){
+.about-main,.load,.services-main,.contact-body{
+    display: block;
+    margin: 5px;
+    padding: 10px;
+}
+.btn{
+    margin-top: 10px;
+    width: 100%;
+}
+.cover-body{
+    margin: 10px;
+}
+.collection{
+    display: none;
+}
+.appear{
+    display: block;
+}
+}
+
+
+@media(max-width:600px){
+
+    .container,h1{
+        font-size: 10px;
+    }
+.btn{
+    font-size: 10px;
+}
+.contact-body-2{
+    overflow: visible;
+}
+    }
